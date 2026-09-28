@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 블로그 (패치 소개 / 댓글 문의)
+    url: https://dwyn.tistory.com/
+    about: GitHub 계정이 없으시면 블로그 댓글로 알려 주세요.
+  - name: 후원하기
+    url: https://litt.ly/dwyn
+    about: 작업을 응원해 주세요.

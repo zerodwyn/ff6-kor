@@ -1,0 +1,70 @@
+name: 버그 제보
+description: 파이널 판타지6 한글패치에서 발견한 오류를 알려 주세요.
+title: "[버그] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        제보해 주셔서 감사합니다. 아래 칸을 채워 주시면 빠르게 확인할 수 있습니다.
+        **스크린샷은 "증상" 칸에 이미지를 끌어다 놓거나 Ctrl+V로 붙여넣으면 첨부됩니다.**
+
+  - type: dropdown
+    id: version
+    attributes:
+      label: 패치 버전
+      description: 사용 중인 한글패치 버전을 골라 주세요.
+      options:
+        - v0.8
+        - 기타 (증상 칸에 적어 주세요)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 구동 환경
+      options:
+        - 슈퍼패미콤 실기 (플래시카트)
+        - 에뮬레이터 (PC)
+        - 에뮬레이터 (모바일)
+        - 기타
+    validations:
+      required: true
+
+  - type: input
+    id: emulator
+    attributes:
+      label: 에뮬레이터 / 플래시카트 이름
+      description: 예) Snes9x 1.62, bsnes, Mesen, RetroArch(코어 이름), FXPAK Pro
+    validations:
+      required: false
+
+  - type: input
+    id: location
+    attributes:
+      label: 발생 위치
+      description: 예) 나르셰 광산, 전투 중 아이템 메뉴
+    validations:
+      required: true
+
+  - type: textarea
+    id: symptom
+    attributes:
+      label: 증상 (스크린샷 첨부)
+      description: 어떤 문제가 있었는지 적고, 스크린샷을 끌어다 놓아 주세요.
+      placeholder: 예) 아이템 메뉴를 열면 일부 아이템 이름이 깨져서 나옵니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 방법 (선택)
+      description: 같은 문제를 다시 일으키는 방법을 알고 계시면 적어 주세요.
+      placeholder: |
+        1. 세이브 불러오기
+        2. 메뉴 → 아이템
+        3. 아래로 스크롤
+    validations:
+      required: false
