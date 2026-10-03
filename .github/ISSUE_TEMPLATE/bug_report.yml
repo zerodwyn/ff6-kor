@@ -15,6 +15,7 @@ body:
       label: 패치 버전
       description: 사용 중인 한글패치 버전을 골라 주세요.
       options:
+        - v0.95
         - v0.92
         - v0.9
         - v0.85
